@@ -1,0 +1,40 @@
+# --- Identity ---
+name: "campaign-launch-pipeline"
+display_name: "Campaign Launch Pipeline"
+description: "End-to-end campaign creation: brief, audience segmentation, copy, and launch plan"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/campaign-launch-pipeline"
+
+# --- Discovery (Hub) ---
+category: "marketing"
+tags:
+  - "campaign"
+  - "launch"
+  - "strategy"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "anthropic-claude"
+    - "openai-gpt4"
+  permissions: []
+  data_handling: []
+
+# --- Contents ---
+contents:
+  skills: 3
+  prompts: 4
+  workflows: 1
+  services: 0
+  sources: 2
+  documents: 1
+  assets: 0
+  total: 11
