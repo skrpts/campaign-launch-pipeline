@@ -5,7 +5,7 @@ title: Copywriting
 description: "Writes persuasive, on-brand copy for any channel or format"
 tags: [Production, Customer-Facing]
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
   - target: brand-voice-guidelines
     type: references

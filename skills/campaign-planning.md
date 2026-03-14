@@ -5,7 +5,7 @@ title: Campaign Planning
 description: "Designs multi-channel marketing campaigns from strategy to execution plan"
 tags: [Production]
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
 ---
 

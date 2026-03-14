@@ -13,7 +13,7 @@ connections:
     type: uses
   - target: copywriting
     type: uses
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
 metadata:
   estimated_duration: "15-30 minutes"
@@ -57,3 +57,47 @@ Invoke the **campaign-brief-generator** prompt to produce a structured campaign 
 Invoke the **copywriting** skill to produce channel-specific copy for all touchpoints defined in the campaign plan. Copy is written against the **brand-voice-guidelines** and **content-style-guide** to ensure consistency across channels.
 
 **Output:** Polished copy for each channel: headlines, body text, and call-to-action variants
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.customer_data}}` | Yes | Customer data | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+| `{{input.market_research}}` | Yes | market research | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.behavioural_analytics}}` | Yes | behavioural analytics | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+| `{{input.business_objectives}}` | No | business objectives | `Paste the relevant brief, notes, source material, or dataset here.` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Segment profiles ready for campaign targeting | Segment profiles ready for campaign targeting |
+| Draft campaign plan | Draft campaign plan with channel mix, timeline, and budget breakdown |
+| Complete campaign brief document | Complete campaign brief document |
+| Polished copy for each channel: headlines, body text, and call-to-action variants | Polished copy for each channel: headlines, body text, and call-to-action variants |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Most stages work with any capable model; stronger models usually improve synthesis, judgement, and writing quality.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Customer Data: "Paste the latest metrics, exported data, or summary notes relevant to the workflow."
+Market Research: "Paste the relevant brief, notes, source material, or dataset here."
+Behavioural Analytics: "Paste the latest metrics, exported data, or summary notes relevant to the workflow."
+Business Objectives: "Paste the relevant brief, notes, source material, or dataset here."
+```
+
