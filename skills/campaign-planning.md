@@ -11,7 +11,7 @@ connections:
 
 ## Capability
 
-Develops comprehensive campaign plans covering objectives, target audiences, channels, timeline, budget allocation, and success metrics.
+Develops multi-channel campaign plans covering objectives, target audiences, channels, timeline, budget allocation, and success metrics.
 
 ## When to Use
 

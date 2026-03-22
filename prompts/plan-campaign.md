@@ -3,7 +3,7 @@ type: prompt
 id: plan-campaign
 title: Plan Campaign
 description: "Core prompt for designing multi-channel campaign strategy"
-tags: []
+tags: [Production]
 connections:
   - target: campaign-planning
     type: derived_from
@@ -11,7 +11,7 @@ connections:
 
 ## Purpose
 
-Creates a comprehensive campaign plan with channel strategy, timeline, and budget allocation.
+Creates a detailed campaign plan with channel strategy, timeline, and budget allocation.
 
 ## Prompt
 

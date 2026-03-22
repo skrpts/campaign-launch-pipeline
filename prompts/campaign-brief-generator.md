@@ -9,7 +9,7 @@ connections:
     type: references
 ---
 
-Create a comprehensive campaign brief from the following inputs. Include:
+Create a structured campaign brief from the following inputs. Include:
 
 - Campaign name and tagline options
 - Background and business context
@@ -24,4 +24,4 @@ Create a comprehensive campaign brief from the following inputs. Include:
 
 ## Inputs
 
-{{requirements}}
+Use the campaign plan, audience segment profiles, and business context provided by the previous pipeline stages to generate the brief.
