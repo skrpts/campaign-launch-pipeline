@@ -24,4 +24,6 @@ Create a structured campaign brief from the following inputs. Include:
 
 ## Inputs
 
-Use the campaign plan, audience segment profiles, and business context provided by the previous pipeline stages to generate the brief.
+- **Campaign plan:** {{steps.plan-campaign.output}}
+- **Audience segment profiles:** {{steps.segment-audience.output}}
+- **Business objectives:** {{input.business_objectives}}
