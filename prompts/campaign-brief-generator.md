@@ -3,7 +3,7 @@ type: prompt
 id: campaign-brief-generator
 title: Campaign Brief Generator
 description: "Creates a structured campaign brief from initial requirements"
-tags: [Production, planning:campaign, design:launch]
+tags: [Production, Campaign, Strategy]
 connections:
   - target: campaign-brief-template
     type: references

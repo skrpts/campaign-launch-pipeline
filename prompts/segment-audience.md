@@ -3,7 +3,7 @@ type: prompt
 id: segment-audience
 title: Segment Audience
 description: "Core prompt for defining target audience segments"
-tags: [Production, analysis:audience, planning:campaign]
+tags: [Production, Audience, Campaign]
 connections:
   - target: audience-segmentation
     type: derived_from

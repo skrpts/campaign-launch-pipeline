@@ -3,7 +3,7 @@ type: skill
 id: copywriting
 title: Copywriting
 description: "Writes persuasive, on-brand copy for any channel or format"
-tags: [Production, Customer-Facing, planning:campaign, writing:copy]
+tags: [Production, Customer-Facing, Campaign, Writing]
 connections:
   - target: llm-service
     type: runs_on

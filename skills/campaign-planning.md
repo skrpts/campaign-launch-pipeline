@@ -3,7 +3,7 @@ type: skill
 id: campaign-planning
 title: Campaign Planning
 description: "Designs multi-channel marketing campaigns from strategy to execution plan"
-tags: [Production, planning:campaign, design:launch]
+tags: [Production, Campaign, Strategy]
 connections:
   - target: llm-service
     type: runs_on

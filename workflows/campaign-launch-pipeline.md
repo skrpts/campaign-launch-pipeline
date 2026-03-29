@@ -3,7 +3,7 @@ type: workflow
 id: campaign-launch-pipeline
 title: Campaign Launch Pipeline
 description: "End-to-end campaign creation: brief, audience segmentation, copy, and launch plan"
-tags: [Production, analysis:audience, planning:campaign, design:launch]
+tags: [Production, Audience, Campaign]
 connections:
   - target: audience-segmentation
     type: uses
