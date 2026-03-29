@@ -3,7 +3,7 @@ type: prompt
 id: write-copy
 title: Write Copy
 description: "Core prompt for producing on-brand marketing copy"
-tags: [Production]
+tags: [Production, planning:campaign, design:launch]
 connections:
   - target: copywriting
     type: derived_from

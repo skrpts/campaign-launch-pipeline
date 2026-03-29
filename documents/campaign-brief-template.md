@@ -3,7 +3,7 @@ type: document
 id: campaign-brief-template
 title: Campaign Brief Template
 description: "Standard template for marketing campaign briefs"
-tags: [Internal]
+tags: [Internal, planning:campaign, design:launch]
 connections: []
 ---
 

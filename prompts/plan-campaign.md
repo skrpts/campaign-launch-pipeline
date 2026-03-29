@@ -3,7 +3,7 @@ type: prompt
 id: plan-campaign
 title: Plan Campaign
 description: "Core prompt for designing multi-channel campaign strategy"
-tags: [Production]
+tags: [Production, planning:campaign, design:launch]
 connections:
   - target: campaign-planning
     type: derived_from

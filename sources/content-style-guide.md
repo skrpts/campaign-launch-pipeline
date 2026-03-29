@@ -3,7 +3,7 @@ type: source
 id: content-style-guide
 title: Content Style Guide
 description: "Writing standards for all marketing content"
-tags: [Production]
+tags: [Production, planning:campaign, design:launch]
 connections: []
 ---
 
