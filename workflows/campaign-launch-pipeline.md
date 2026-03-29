@@ -13,8 +13,12 @@ connections:
     type: uses
   - target: copywriting
     type: uses
+  - target: content-briefing
+    type: uses
   - target: llm-service
     type: runs_on
+  - target: brand-voice-guide
+    type: references
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
@@ -54,7 +58,7 @@ Invoke the **campaign-brief-generator** prompt to produce a structured campaign 
 
 **Input:** Campaign brief, brand voice guidelines, content style guide
 
-Invoke the **copywriting** skill to produce channel-specific copy for all touchpoints defined in the campaign plan. Copy is written against the **brand-voice-guidelines** and **content-style-guide** to ensure consistency across channels.
+Invoke the **copywriting** skill to produce channel-specific copy for all touchpoints defined in the campaign plan. Copy is written against the **brand-voice-guide** and **content-style-guide** to ensure consistency across channels.
 
 **Output:** Polished copy for each channel: headlines, body text, and call-to-action variants
 
