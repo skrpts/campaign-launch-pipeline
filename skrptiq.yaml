@@ -3,7 +3,7 @@ id: "e4074f20-0ff7-43a2-895c-7b81ff7a6154"
 name: "campaign-launch-pipeline"
 display_name: "Campaign Launch Pipeline"
 description: "End-to-end campaign creation: brief, audience segmentation, copy, and launch plan"
-version: "1.4.0"
+version: "1.0.0"
 engine: ">=1.0.0"
 
 # --- Attribution ---
