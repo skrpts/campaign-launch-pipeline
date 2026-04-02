@@ -20,16 +20,16 @@ connections:
   - target: brand-voice-guide
     type: references
   - target: content-ideation
+    type: uses
   - target: plan-campaign
+    type: uses
   - target: segment-audience
+    type: uses
   - target: write-copy
+    type: uses
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
-    type: uses
-    type: uses
-    type: uses
-    type: uses
 ---
 
 ## Overview
