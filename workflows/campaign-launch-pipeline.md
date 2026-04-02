@@ -19,16 +19,16 @@ connections:
     type: runs_on
   - target: brand-voice-guide
     type: references
+  - target: content-ideation
+  - target: plan-campaign
+  - target: segment-audience
+  - target: write-copy
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
-  - target: content-ideation
     type: uses
-  - target: plan-campaign
     type: uses
-  - target: segment-audience
     type: uses
-  - target: write-copy
     type: uses
 ---
 
