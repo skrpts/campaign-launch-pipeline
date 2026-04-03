@@ -27,6 +27,10 @@ connections:
     type: uses
   - target: write-copy
     type: uses
+  - target: input-gap-check
+    type: uses
+  - target: image-briefing
+    type: uses
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
