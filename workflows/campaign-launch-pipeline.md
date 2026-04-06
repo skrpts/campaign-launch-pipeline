@@ -9,8 +9,6 @@ connections:
     type: uses
   - target: campaign-planning
     type: uses
-  - target: campaign-brief-generator
-    type: uses
   - target: copywriting
     type: uses
   - target: content-briefing
@@ -20,12 +18,6 @@ connections:
   - target: brand-voice-guide
     type: references
   - target: content-ideation
-    type: uses
-  - target: plan-campaign
-    type: uses
-  - target: segment-audience
-    type: uses
-  - target: write-copy
     type: uses
   - target: input-gap-check
     type: uses
