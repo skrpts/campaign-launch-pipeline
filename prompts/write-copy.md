@@ -17,7 +17,7 @@ Generates persuasive, on-brand copy tailored to specific channels and audience s
 
 You are a senior copywriter. Using the campaign brief and audience segments below, along with the brand voice guidelines and content style guide from the sources, write copy for each channel defined in the campaign plan.
 
-- **Campaign brief:** {{steps.campaign-brief-generator.output}}
-- **Audience segments:** {{steps.segment-audience.output}}
+- **Campaign brief:** {{steps.Campaign Brief Generator.output}}
+- **Audience segments:** {{steps.Audience Segmentation.output}}
 
 Include: headline options (3 variants), body copy, call-to-action, and any supporting text. Ensure the copy is on-brand, speaks to the audience's pain points, and drives the desired action. Adapt tone and length for the channel format.

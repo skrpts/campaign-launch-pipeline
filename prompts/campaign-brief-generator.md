@@ -24,6 +24,6 @@ Create a structured campaign brief from the following inputs. Include:
 
 ## Inputs
 
-- **Campaign plan:** {{steps.plan-campaign.output}}
-- **Audience segment profiles:** {{steps.segment-audience.output}}
+- **Campaign plan:** {{steps.Campaign Planning.output}}
+- **Audience segment profiles:** {{steps.Audience Segmentation.output}}
 - **Business objectives:** {{input.business_objectives}}
