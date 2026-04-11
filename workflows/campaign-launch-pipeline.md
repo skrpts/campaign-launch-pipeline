@@ -26,6 +26,20 @@ connections:
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
+execution:
+  - skill: "audience-segmentation"
+  - skill: "campaign-planning"
+    input_from: "audience-segmentation"
+  - skill: "copywriting"
+    input_from: "campaign-planning"
+  - skill: "content-briefing"
+    input_from: "copywriting"
+  - skill: "content-ideation"
+    input_from: "content-briefing"
+  - skill: "image-briefing"
+    input_from: "content-ideation"
+  - skill: "input-gap-check"
+    input_from: "image-briefing"
 ---
 
 ## Overview
