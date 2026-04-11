@@ -4,6 +4,12 @@ id: plan-campaign
 title: Plan Campaign
 description: "Core prompt for designing multi-channel campaign strategy"
 tags: [Production, Campaign, Strategy]
+inputs:
+  business_objectives:
+    label: "Business Objectives"
+    description: "Business Objectives"
+    required: true
+    type: text
 connections:
   - target: campaign-planning
     type: derived_from

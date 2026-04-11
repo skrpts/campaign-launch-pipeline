@@ -4,6 +4,12 @@ id: campaign-brief-generator
 title: Campaign Brief Generator
 description: "Creates a structured campaign brief from initial requirements"
 tags: [Production, Campaign, Strategy]
+inputs:
+  business_objectives:
+    label: "Business Objectives"
+    description: "Business Objectives"
+    required: true
+    type: text
 connections:
   - target: campaign-brief-template
     type: references
