@@ -28,20 +28,6 @@ metadata:
   trigger: manual
 execution:
   - skill: "audience-segmentation"
-  - skill: "campaign-planning"
-    input_from: "audience-segmentation"
-  - skill: "copywriting"
-    input_from: "campaign-planning"
-  - skill: "content-briefing"
-    input_from: "copywriting"
-  - skill: "content-ideation"
-    input_from: "content-briefing"
-  - skill: "image-briefing"
-    input_from: "content-ideation"
-  - skill: "input-gap-check"
-    input_from: "image-briefing"
-execution:
-  - skill: "audience-segmentation"
     step_type: "synthesis"
   - skill: "campaign-planning"
     step_type: "generation"
@@ -156,4 +142,3 @@ Highest-engagement feature: shared task boards (used by 84% of active teams). On
 ```
 Q2 2025 growth campaign. Primary goal: increase free trial sign-ups by 30% over Q1 baseline (Q1 baseline: 1,200 trials/month). Secondary goal: improve trial-to-paid conversion from 11% to 15% by driving activation of key features during trial. Budget: £45,000 for the quarter. Channels to consider: paid search, LinkedIn advertising, content marketing, email nurture sequences, and partner co-marketing. Brand constraint: no aggressive comparison marketing — position on own strengths rather than competitor weaknesses. Campaign must be live by 7 April 2025.
 ```
-
