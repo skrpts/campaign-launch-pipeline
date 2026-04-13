@@ -31,22 +31,16 @@ execution:
     step_type: "synthesis"
   - skill: "campaign-planning"
     step_type: "generation"
-    input_from: "audience-segmentation"
   - skill: "copywriting"
     step_type: "generation"
-    input_from: "campaign-planning"
   - skill: "content-briefing"
     step_type: "generation"
-    input_from: "copywriting"
   - skill: "content-ideation"
     step_type: "generation"
-    input_from: "content-briefing"
   - skill: "image-briefing"
     step_type: "generation"
-    input_from: "content-ideation"
   - skill: "input-gap-check"
     step_type: "review"
-    input_from: "image-briefing"
 ---
 
 ## Overview
