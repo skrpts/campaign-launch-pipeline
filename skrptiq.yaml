@@ -3,7 +3,7 @@ id: "e4074f20-0ff7-43a2-895c-7b81ff7a6154"
 name: "campaign-launch-pipeline"
 display_name: "Campaign Launch Pipeline"
 description: "End-to-end campaign creation: brief, audience segmentation, copy, and launch plan"
-version: "1.1.11"
+version: "1.1.12"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -28,17 +28,6 @@ requires:
   permissions: []
   data_handling:
     - "pii"
-
-# --- Output ---
-output_step: "image-briefing"
-composite_steps:
-  - "audience-segmentation"
-  - "campaign-planning"
-  - "copywriting"
-  - "content-briefing"
-  - "content-ideation"
-  - "input-gap-check"
-  - "image-briefing"
 
 # --- Contents ---
 contents:

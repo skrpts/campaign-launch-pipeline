@@ -26,6 +26,15 @@ connections:
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
+output_step: "image-briefing"
+composite_steps:
+  - "audience-segmentation"
+  - "campaign-planning"
+  - "copywriting"
+  - "content-briefing"
+  - "content-ideation"
+  - "input-gap-check"
+  - "image-briefing"
 execution:
   - skill: "audience-segmentation"
     step_type: "synthesis"
