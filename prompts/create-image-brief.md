@@ -4,13 +4,6 @@ id: create-image-brief
 title: "Create Image Brief"
 description: "Generates detailed image briefs for designers or AI image generators"
 tags: [Production, Creative]
-inputs:
-  brand_guidelines:
-    label: "Brand Guidelines"
-    description: "Your brand voice, tone, and style guidelines"
-    example: "Professional but approachable. Use 'we' not 'I'. Avoid exclamation marks."
-    required: true
-    type: text
 connections:
   - target: image-briefing
     type: derived_from
@@ -33,7 +26,7 @@ You are a creative director. Produce image briefs based on the campaign or conte
 
 ### Brand Guidelines
 
-{{input.brand_guidelines}}
+{{step.context.brand_guidelines}}
 
 ### Instructions
 

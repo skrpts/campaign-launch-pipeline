@@ -4,6 +4,12 @@ id: image-briefing
 title: Image Briefing
 description: "Generates detailed image briefs for designers or AI image generators from campaign or content context"
 tags: [Production, Creative, Marketing]
+context_params:
+  brand_guidelines:
+    label: "Brand Guidelines"
+    description: "Brand voice, tone, and style guidelines"
+    default: ""
+    required: true
 connections:
   - target: llm-service
     type: runs_on

@@ -38,16 +38,24 @@ composite_steps:
 execution:
   - skill: "audience-segmentation"
     step_type: "synthesis"
+    context:
+      market_context: ""
   - skill: "campaign-planning"
     step_type: "generation"
   - skill: "copywriting"
     step_type: "generation"
   - skill: "content-briefing"
     step_type: "generation"
+    context:
+      target_audience: ""
   - skill: "content-ideation"
     step_type: "generation"
+    context:
+      content_context: ""
   - skill: "image-briefing"
     step_type: "generation"
+    context:
+      brand_guidelines: ""
   - skill: "input-gap-check"
     step_type: "review"
 ---
