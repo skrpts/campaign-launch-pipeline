@@ -13,6 +13,10 @@ connections:
     type: uses
   - target: content-briefing
     type: uses
+  - target: language-polish
+    type: uses
+  - target: consistency-check
+    type: uses
   - target: llm-service
     type: runs_on
   - target: brand-voice-guide
@@ -26,7 +30,7 @@ connections:
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
-output_step: "image-briefing"
+output_step: "copywriting"
 composite_steps:
   - "audience-segmentation"
   - "campaign-planning"
@@ -38,6 +42,7 @@ composite_steps:
 execution:
   - skill: "audience-segmentation"
     step_type: "synthesis"
+    prompt: "campaign-launch-brief"
     context:
       market_context: ""
   - skill: "campaign-planning"
@@ -56,8 +61,6 @@ execution:
     step_type: "generation"
     context:
       brand_guidelines: ""
-  - skill: "input-gap-check"
-    step_type: "review"
 ---
 
 ## Overview
@@ -110,7 +113,15 @@ Invoke the **copywriting** skill to produce channel-specific copy for all touchp
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+|------|----------
+  - skill: "language-polish"
+    step_type: "content"
+  - parallel:
+    - skill: "consistency-check"
+      step_type: "review"
+    - skill: "input-gap-check"
+      step_type: "review"
+---|
 | Segment profiles | Audience segments with demographics, psychographics, pain points, and channel preferences |
 | Campaign plan | Multi-channel strategy with channel mix, timeline, and budget breakdown |
 | Campaign brief | Structured brief with SMART objectives, key messages, measurement plan, and risk assessment |

@@ -28,6 +28,12 @@ You are a creative director. Produce image briefs based on the campaign or conte
 
 {{step.context.brand_guidelines}}
 
+### Audience Profile
+
+{{step.context.audience_profile}}
+
+If an audience profile is provided above, tailor the image style, tone, and subject matter to resonate with the described audience segments.
+
 ### Instructions
 
 For each image needed, produce a brief covering:

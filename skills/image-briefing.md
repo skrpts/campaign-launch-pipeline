@@ -10,6 +10,10 @@ context_params:
     description: "Brand voice, tone, and style guidelines"
     default: ""
     required: true
+  audience_profile:
+    label: "Audience Profile"
+    description: "Target audience for image style and tone targeting"
+    required: false
 connections:
   - target: llm-service
     type: runs_on
