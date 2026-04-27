@@ -46,18 +46,23 @@ execution:
     context:
       market_context: ""
   - skill: "campaign-planning"
+    prompt: "plan-campaign"
     step_type: "generation"
   - skill: "copywriting"
+    prompt: "write-copy"
     step_type: "generation"
   - skill: "content-briefing"
+    prompt: "create-content-brief"
     step_type: "generation"
     context:
       target_audience: ""
   - skill: "content-ideation"
+    prompt: "generate-content-ideas"
     step_type: "generation"
     context:
       content_context: ""
   - skill: "image-briefing"
+    prompt: "create-image-brief"
     step_type: "generation"
     context:
       brand_guidelines: ""

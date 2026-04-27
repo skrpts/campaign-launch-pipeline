@@ -12,6 +12,8 @@ inputs:
     required: true
     type: text
 connections:
+  - target: campaign-planning
+    type: derived_from
   - target: campaign-brief-template
     type: references
 ---
