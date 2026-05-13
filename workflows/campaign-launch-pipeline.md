@@ -44,7 +44,7 @@ execution:
     step_type: "synthesis"
     prompt: "campaign-launch-brief"
     context:
-      market_context: ""
+      market_context: "No additional market context"
   - skill: "campaign-planning"
     prompt: "plan-campaign"
     step_type: "generation"
@@ -55,30 +55,30 @@ execution:
     prompt: "create-content-brief"
     step_type: "generation"
     context:
-      target_audience: ""
+      target_audience: "General professional audience"
   - skill: "content-ideation"
     prompt: "generate-content-ideas"
     step_type: "generation"
     context:
-      content_context: ""
+      content_context: "No additional context"
   - skill: "image-briefing"
     prompt: "create-image-brief"
     step_type: "generation"
     context:
-      brand_guidelines: ""
-      audience_profile: ""
+      brand_guidelines: "No specific brand guidelines"
+      audience_profile: "General professional audience"
   - skill: "consistency-check"
     step_type: "review"
     prompt: "check-consistency"
     context:
-      voice_profile: ""
-      consistency_strictness: ""
+      voice_profile: "Neutral professional tone"
+      consistency_strictness: "Standard"
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-language"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
 ---
 
 ## Overview
