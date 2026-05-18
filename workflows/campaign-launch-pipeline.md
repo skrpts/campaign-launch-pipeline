@@ -61,6 +61,10 @@ execution:
     step_type: "generation"
     context:
       content_context: "No additional context"
+    bindings:
+      source_content:
+        from_step: "Content Briefing"
+        field: output
   - skill: "image-briefing"
     prompt: "create-image-brief"
     step_type: "generation"
