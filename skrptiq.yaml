@@ -3,7 +3,7 @@ id: "e4074f20-0ff7-43a2-895c-7b81ff7a6154"
 name: "campaign-launch-pipeline"
 display_name: "Campaign Launch Pipeline"
 description: "End-to-end campaign creation: brief, audience segmentation, copy, and launch plan"
-version: "1.1.27"
+version: "1.1.28"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -104,7 +104,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-07-02T19:14:27.815Z"
+  scanned_at: "2026-07-02T19:17:27.794Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

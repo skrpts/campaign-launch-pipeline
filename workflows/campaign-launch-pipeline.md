@@ -43,22 +43,27 @@ execution:
   - skill: "audience-segmentation"
     step_type: "synthesis"
     prompt: "campaign-launch-brief"
+    output: { name: "campaign_brief", type: "text" }
     context:
       market_context: "No additional market context"
   - skill: "campaign-planning"
     prompt: "plan-campaign"
     step_type: "generation"
+    output: { name: "campaign_plan", type: "text" }
   - skill: "copywriting"
     prompt: "write-copy"
     step_type: "generation"
+    output: { name: "copy", type: "text" }
   - skill: "content-briefing"
     prompt: "create-content-brief"
     step_type: "generation"
+    output: { name: "brief", type: "text" }
     context:
       target_audience: "General professional audience"
   - skill: "content-ideation"
     prompt: "generate-content-ideas"
     step_type: "generation"
+    output: { name: "ideas", type: "list" }
     context:
       content_context: "No additional context"
     bindings:
@@ -68,18 +73,21 @@ execution:
   - skill: "image-briefing"
     prompt: "create-image-brief"
     step_type: "generation"
+    output: { name: "image_brief", type: "text" }
     context:
       brand_guidelines: "No specific brand guidelines"
       audience_profile: "General professional audience"
   - skill: "consistency-check"
     step_type: "review"
     prompt: "check-consistency"
+    output: { name: "consistency_verdict", type: "decision" }
     context:
       voice_profile: "Neutral professional tone"
       consistency_strictness: "Standard"
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-language"
+    output: { name: "polished_content", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
