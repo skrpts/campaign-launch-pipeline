@@ -18,7 +18,7 @@ Develops multi-channel campaign plans covering objectives, target audiences, cha
 - Launching new products or features
 - Seasonal or event-driven campaigns
 - Brand awareness initiatives
-- Lead generation programmes
+- Lead generation programs
 
 ## Inputs
 

@@ -101,9 +101,9 @@ This workflow guides a complete campaign launch from initial audience analysis t
 
 ### Stage 1: Audience Segmentation
 
-**Input:** Customer data, market research, behavioural analytics
+**Input:** Customer data, market research, behavioral analytics
 
-Invoke the **audience-segmentation** skill to analyse the target market and identify distinct audience segments. Each segment is profiled with demographics, psychographics, pain points, preferred channels, and a recommended messaging angle.
+Invoke the **audience-segmentation** skill to analyze the target market and identify distinct audience segments. Each segment is profiled with demographics, psychographics, pain points, preferred channels, and a recommended messaging angle.
 
 **Output:** Segment profiles ready for campaign targeting
 
@@ -137,7 +137,7 @@ Invoke the **copywriting** skill to produce channel-specific copy for all touchp
 |------|----------|-------------|---------|
 | `{{input.customer_data}}` | Yes | Customer data | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
 | `{{input.market_research}}` | Yes | market research | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.behavioural_analytics}}` | Yes | behavioural analytics | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+| `{{input.behavioural_analytics}}` | Yes | behavioral analytics | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
 | `{{input.business_objectives}}` | No | business objectives | `Paste the relevant brief, notes, source material, or dataset here.` |
 
 ## Outputs
@@ -154,7 +154,7 @@ Invoke the **copywriting** skill to produce channel-specific copy for all touchp
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes
@@ -177,7 +177,7 @@ FocusFlow is a B2B SaaS productivity app for teams of 10–200. Current customer
 UK productivity software market growing at 12% CAGR. Key competitors: Todoist (consumer-focused, strong brand), Asana (enterprise, complex onboarding), and Motion (AI-native, small but growing fast). FocusFlow's differentiator is simplicity — teams adopt it without training. Analyst reports highlight a gap in the market for "mid-complexity" tools that sit between simple to-do apps and full project management suites. Buyer personas from recent interviews: Team Leads who want visibility without micromanaging, and Operations Managers who need reporting without the overhead of enterprise tools. Seasonal trend: new tool adoption spikes in January and September (new year / post-summer planning).
 ```
 
-**Behavioural Analytics:**
+**Behavioral Analytics:**
 ```
 Highest-engagement feature: shared task boards (used by 84% of active teams). Onboarding completion rate: 61% — biggest drop-off at the "invite teammates" step (only 43% complete it). Users who invite at least 2 teammates in the first week have 3x higher 90-day retention. Email open rates: 28% average, 41% for product update emails. Blog traffic has grown 22% quarter-on-quarter; top-performing posts are "how-to" guides and comparison articles. Free trial to paid conversion: 11%. Users who engage with the daily focus planner during trial convert at 19%.
 ```
