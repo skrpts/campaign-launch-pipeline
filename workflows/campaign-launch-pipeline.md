@@ -9,6 +9,8 @@ connections:
     type: uses
   - target: campaign-planning
     type: uses
+  - target: campaign-brief-builder
+    type: uses
   - target: copywriting
     type: uses
   - target: content-briefing
@@ -34,6 +36,7 @@ output_step: "copywriting"
 composite_steps:
   - "audience-segmentation"
   - "campaign-planning"
+  - "campaign-brief-builder"
   - "copywriting"
   - "content-briefing"
   - "content-ideation"
@@ -50,10 +53,32 @@ execution:
     prompt: "plan-campaign"
     step_type: "generation"
     output: { name: "campaign_plan", type: "text" }
+    bindings:
+      audience_segments:
+        from_step: "Audience Segmentation"
+        field: output
+  - skill: "campaign-brief-builder"
+    prompt: "campaign-brief-generator"
+    step_type: "synthesis"
+    output: { name: "campaign_brief_doc", type: "text" }
+    bindings:
+      campaign_plan:
+        from_step: "Campaign Planning"
+        field: output
+      audience_segments:
+        from_step: "Audience Segmentation"
+        field: output
   - skill: "copywriting"
     prompt: "write-copy"
     step_type: "generation"
     output: { name: "copy", type: "text" }
+    bindings:
+      campaign_brief:
+        from_step: "Campaign Brief Generator"
+        field: output
+      audience_segments:
+        from_step: "Audience Segmentation"
+        field: output
   - skill: "content-briefing"
     prompt: "create-content-brief"
     step_type: "generation"
@@ -130,6 +155,14 @@ Invoke the **campaign-brief-generator** prompt to produce a structured campaign 
 Invoke the **copywriting** skill to produce channel-specific copy for all touchpoints defined in the campaign plan. Copy is written against the **brand-voice-guide** and **content-style-guide** to ensure consistency across channels.
 
 **Output:** Polished copy for each channel: headlines, body text, and call-to-action variants
+
+### Stage 5: Content Enrichment and Quality Assurance
+
+**Input:** Campaign copy, campaign brief, brand voice guidelines
+
+Invoke the supporting content stages — content briefing, content ideation, image briefing, consistency checking, and language polishing — to enrich the campaign with a content brief, supporting ideas, and an image brief, then verify brand consistency and polish the final language. These stages ensure the campaign ships as a coherent, on-brand, publication-ready package.
+
+**Output:** Content brief, content ideas, image brief, consistency verdict, and polished final copy
 
 ## Inputs
 

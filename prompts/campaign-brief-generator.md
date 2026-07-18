@@ -11,6 +11,16 @@ inputs:
     example: "Increase organic traffic 40% in Q3, launch 2 new product lines, reduce churn below 5%"
     required: true
     type: text
+context_params:
+  campaign_plan:
+    label: "Campaign Plan"
+    description: "The multi-channel campaign plan — the structural basis for the brief."
+    required: false
+    default_from_previous: true
+  audience_segments:
+    label: "Audience Segments"
+    description: "Audience segment profiles — the targeting evidence for the brief."
+    required: false
 connections:
   - target: campaign-planning
     type: derived_from
@@ -33,6 +43,6 @@ Create a structured campaign brief from the following inputs. Include:
 
 ## Inputs
 
-- **Campaign plan:** {{steps.Campaign Planning.output}}
-- **Audience segment profiles:** {{steps.Audience Segmentation.output}}
+- **Campaign plan:** {{step.context.campaign_plan}}
+- **Audience segment profiles:** {{step.context.audience_segments}}
 - **Business objectives:** {{input.business_objectives}}

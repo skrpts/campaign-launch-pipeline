@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.2.0
+GH#863 (K-045 intent/output-mismatch) — wire the previously-orphaned `campaign-brief-generator` prompt into the pipeline. It was declared but never invoked, so the campaign brief it promises was never produced and copywriting silently consumed the campaign plan instead. Added a `campaign-brief-builder` backing skill (title "Campaign Brief Generator") and inserted the brief step at Stage 3 (after campaign planning, before copywriting), bound to the campaign plan and audience segments via explicit `from_step`. Rebound copywriting to consume the brief step's output, and converted positional `{{steps.X.output}}` refs in plan-campaign, campaign-brief-generator, and write-copy to `context_params` + `{{step.context.*}}` bindings. Added a Stage 5 narrative for the content-enrichment/QA steps. Contents: skills 2→3, total 9→10.
+
 ## v1.1.29
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 
