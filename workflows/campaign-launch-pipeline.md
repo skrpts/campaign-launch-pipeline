@@ -172,6 +172,8 @@ Invoke the supporting content stages — content briefing, content ideation, ima
 | `{{input.market_research}}` | Yes | market research | `Paste the relevant brief, notes, source material, or dataset here.` |
 | `{{input.behavioural_analytics}}` | Yes | behavioral analytics | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
 | `{{input.business_objectives}}` | No | business objectives | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.campaign_name}}` | Yes | Name or title of the campaign | `Q3 Product Launch — Analytics Dashboard` |
+| `{{input.target_market}}` | Yes | Who you want to reach | `Marketing managers and CMOs at mid-market B2B SaaS` |
 
 ## Outputs
 

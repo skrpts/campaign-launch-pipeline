@@ -1,5 +1,11 @@
 # Release Notes
 
+## v1.2.2
+GH#1044 — the last of the required-but-undocumented inputs, resolved by testing whether the existing table name is itself required by a prompt rather than by how similar the names look. documented target_market. Rows generated from the requiring prompt's own declared description, example and required flag. No behaviour change; documentation only.
+
+## v1.2.1
+GH#1044 — document the inputs this workflow's prompts REQUIRE but its Inputs table never listed. A user supplying exactly what the table asked for was running with required parameters unsatisfied — a silent wrong run, not a documentation nicety. documented 2 input(s): campaign_name, target_market. Every row is generated from the requiring prompt's own declared description, example and required flag — none invented. No behaviour change; documentation only.
+
 ## v1.2.0
 GH#863 (K-045 intent/output-mismatch) — wire the previously-orphaned `campaign-brief-generator` prompt into the pipeline. It was declared but never invoked, so the campaign brief it promises was never produced and copywriting silently consumed the campaign plan instead. Added a `campaign-brief-builder` backing skill (title "Campaign Brief Generator") and inserted the brief step at Stage 3 (after campaign planning, before copywriting), bound to the campaign plan and audience segments via explicit `from_step`. Rebound copywriting to consume the brief step's output, and converted positional `{{steps.X.output}}` refs in plan-campaign, campaign-brief-generator, and write-copy to `context_params` + `{{step.context.*}}` bindings. Added a Stage 5 narrative for the content-enrichment/QA steps. Contents: skills 2→3, total 9→10.
 
