@@ -3,7 +3,7 @@ id: "e4074f20-0ff7-43a2-895c-7b81ff7a6154"
 name: "campaign-launch-pipeline"
 display_name: "Campaign Launch Pipeline"
 description: "End-to-end campaign creation: brief, audience segmentation, copy, and launch plan"
-version: "1.2.2"
+version: "1.2.3"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -25,16 +25,16 @@ tags:
 dependencies:
   - id: "977ca840-8322-4df1-bc13-98d43b3e41a8"
     name: "audience-segmentation"
-    version: 1.0.1
-    checksum: "sha256:bcd35f100fcf4843c8b8583541ae60952e1cb5d6001700f56c5e85533f0f672b"
+    version: 1.0.2
+    checksum: "sha256:913727caeec5a262ab4213fe98b04f2506620f895d877f41637cb0cdf40bb87b"
   - id: "89a5666b-057e-4acc-9c1b-15858bd832dd"
     name: "brand-voice-guide"
     version: 1.0.3
     checksum: "sha256:f29ebcd4fd0e28cac60214ea1f9626d781ed0277c8ecdd8fa15d7caa4a470336"
   - id: "41cb77d1-e7a5-46dd-a127-6cce685f20b4"
     name: "check-consistency"
-    version: 1.0.5
-    checksum: "sha256:e4da29d0d31343b8b619bb98a993a997501e8c8f6e7a70c8105143a2cc85eed1"
+    version: 1.0.6
+    checksum: "sha256:f8f5e6ee26ff5321e542baedb56114d4256522677296ebabba6e04eb59d06305"
   - id: "bf15c78d-4452-406e-9d54-a72b1a4797c7"
     name: "consistency-check"
     version: 1.0.3
@@ -49,12 +49,12 @@ dependencies:
     checksum: "sha256:b29a6d9cb9a1c98239ec63e20db684e8f6d2d4f174005e0693776ce8a5624ed9"
   - id: "18c65203-c687-46f1-9ded-e09eb3f7862a"
     name: "create-content-brief"
-    version: 1.0.4
-    checksum: "sha256:f02b232209ff1beebb1a306af1f01b2a71968651bd26e4165b91a11295ff4384"
+    version: 1.0.5
+    checksum: "sha256:4fd77b1963d8d9e798b2407053c38c69a1d88578118fb524e7e163bbfbf7e0e3"
   - id: "1e39d22d-1d37-4981-abc2-81ff4488429d"
     name: "create-image-brief"
-    version: 1.0.4
-    checksum: "sha256:5d6a9332f53acc1eea81fccb82bf9da43ca58c2f0ae8b02e5d4b9a9110e62fa7"
+    version: 1.0.5
+    checksum: "sha256:91ff70dee85925e8eb88974693f5ff29ababef8e5ba79b7b3e9af8dba7c0f2ed"
   - id: "370c217e-d5ed-46bc-9475-6e1ba259267a"
     name: "generate-content-ideas"
     version: 1.0.2
@@ -77,8 +77,8 @@ dependencies:
     checksum: "sha256:18783015383c041de9c3fdaa191b79172ab534348448c20c74f9a967ab4dd917"
   - id: "9b1771e0-39b0-4fbc-8d45-738f51b6083a"
     name: "polish-language"
-    version: 1.0.3
-    checksum: "sha256:b48c92d9a1f25091d5b337b871ef065e45e9fcd3a9117a22e63bab19a1d0325a"
+    version: 1.0.7
+    checksum: "sha256:637891c464e09eb353932f9a37a59dd8bfe77be7117fb6918e032fba802040d0"
   - id: "18479da6-a5f3-4755-b9a4-5bdbc9196b0d"
     name: "segment-audience"
     version: 1.0.5
@@ -104,7 +104,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-10-19T12:51:38.924Z"
+  scanned_at: "2026-10-30T08:35:48.256Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

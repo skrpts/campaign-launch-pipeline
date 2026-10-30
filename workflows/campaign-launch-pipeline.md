@@ -85,6 +85,10 @@ execution:
     output: { name: "brief", type: "text" }
     context:
       target_audience: "General professional audience"
+    bindings:
+      source:
+        from_step: "Campaign Planning"
+        field: output
   - skill: "content-ideation"
     prompt: "generate-content-ideas"
     step_type: "generation"
@@ -102,6 +106,10 @@ execution:
     context:
       brand_guidelines: "No specific brand guidelines"
       audience_profile: "General professional audience"
+    bindings:
+      source:
+        from_step: "Content Ideation"
+        field: output
   - skill: "consistency-check"
     step_type: "review"
     prompt: "check-consistency"
@@ -109,6 +117,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       consistency_strictness: "Standard"
+    bindings:
+      source:
+        from_step: "Image Briefing"
+        field: output
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-language"
@@ -116,6 +128,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Copywriting"
+        field: output
 ---
 
 ## Overview

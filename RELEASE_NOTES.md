@@ -1,5 +1,10 @@
 # Release Notes
 
+## v1.2.3
+GH#1100 consumer wave batch 6 — declare the data flow these steps were resolving positionally. 4 binding(s) added.
+
+Two bindings do not take the positional predecessor. `create-content-brief` (slot "Topic") binds Campaign Planning — position would have fed it the already-written copy. `polish-language` (slot "Source") binds Copywriting — position would have fed it a consistency *verdict*, which is a decision rather than text.
+
 ## v1.2.2
 GH#1044 — the last of the required-but-undocumented inputs, resolved by testing whether the existing table name is itself required by a prompt rather than by how similar the names look. documented target_market. Rows generated from the requiring prompt's own declared description, example and required flag. No behaviour change; documentation only.
 
