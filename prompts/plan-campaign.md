@@ -16,7 +16,6 @@ context_params:
     label: "Audience Segments"
     description: "Audience segment profiles — the targeting basis for the plan."
     required: false
-    default_from_previous: true
 connections:
   - target: campaign-planning
     type: derived_from

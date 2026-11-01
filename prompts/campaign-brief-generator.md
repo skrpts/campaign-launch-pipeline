@@ -16,7 +16,6 @@ context_params:
     label: "Campaign Plan"
     description: "The multi-channel campaign plan — the structural basis for the brief."
     required: false
-    default_from_previous: true
   audience_segments:
     label: "Audience Segments"
     description: "Audience segment profiles — the targeting evidence for the brief."

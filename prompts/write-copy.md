@@ -9,7 +9,6 @@ context_params:
     label: "Campaign Brief"
     description: "The structured campaign brief — the source of truth for messaging and channels."
     required: false
-    default_from_previous: true
   audience_segments:
     label: "Audience Segments"
     description: "Audience segment profiles — the targeting evidence for the copy."
